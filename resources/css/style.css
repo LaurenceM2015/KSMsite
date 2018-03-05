@@ -26,6 +26,20 @@ body {
     overflow-x: hidden;
 }
 
+
+/* For Small tablet to big tablet: from 0 to 768px to 1023     */
+/*=============================================================*/
+
+@media only screen and (max-width: 767px){
+	body { font-size: 16px;}
+}
+
+@media only screen and (max-width: 1023px) {
+     body { font-size: 18px; }
+    section { padding: 60px 0; }
+
+}
+
 .clearfix{zoom: 1}
 .clearfix:after{
     content: '.';
@@ -52,11 +66,35 @@ ul{
 .row-nav, .row-section {
     max-width: 1140px;
     margin: 0 auto;
-    
 }
+
+@media only screen and (max-width: 767px){
+	.row-section,
+}
+
+@media only screen and (max-width: 1200px){
+	.row-section {padding: 0 2%; }
+}
+
 
 section {
     padding: 70px 0;
+}
+
+@media only screen and (max-width: 480px){
+	section { padding: 25px 0;}
+}
+
+@media only screen and (max-width: 767px){
+	 section { padding: 30px 0; }
+}
+
+
+@media only screen and (max-width: 767px){
+	.col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
 }
 
 .box p{
@@ -72,6 +110,8 @@ img{
 .text-center{
 	text-align: center;
 }
+
+
 
 
 
@@ -144,6 +184,13 @@ h1 {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 767px) {
+    
+    h1 { font-size: 180%}
+    h2 { font-size: 150%}
+
+}
+
 h2 {
     font-size: 180%;
     word-spacing: 2px;
@@ -178,6 +225,22 @@ h2:after {
     margin-left: 15%; /* to add the remaining 30% after 70% so the content will be centered */
 }
 
+@media only screen and (max-width: 767px){
+	.long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+
+@media only screen and (max-width: 1023px){
+	.long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+	
+}
+
 /*===================== ICONS ==================*/
 
 .icon-big {
@@ -199,6 +262,14 @@ h2:after {
     line-height: 120%; /* to align with the text*/
     vertical-align: middle;
     margin-top: -5px; /* pull the margin to the top*/
+}
+
+@media only screen and (max-width: 1023px){
+	.icon-small { 
+        width: 17px; 
+        margin-right: 5px;
+    }
+	
 }
 
 /*===================== BUTTONS =======================*/
@@ -232,6 +303,12 @@ input[type=submit] {
     border-radius: 200px;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+@media only screen and (max-width: 480px){
+	.btn-full{
+        margin-bottom: 15px;
+    }
 }
 
 .btn-full:link,
@@ -306,6 +383,20 @@ header {
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 767px){
+	.hero-text-box { padding: 0 4%; }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    /* translate the element of it width & height the top and the left */
+	.hero-text-box {
+		width: 100%;
+		padding: 0 2%;
+
+		}
+}
+    
 .logo {
     height: 100px;
     width: auto;
@@ -314,6 +405,13 @@ header {
     margin-left: 10px;
 	border-radius: 50%;
     
+}
+
+@media only screen and (max-width: 480px){
+	.logo{
+       margin-top: 30px;
+    }
+	
 }
 
 .logo-black{
@@ -370,6 +468,30 @@ header {
     color: #fff;
 }
 
+@media only screen and (max-width: 767px){
+	.main-nav { display: none; }
+    .mobile-nav-icon {display: inline-block;}
+    
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+	
+}
+
 /*========================================*/
 /*          STICKY NAVIGATION             */
 /*=======================================*/
@@ -399,15 +521,38 @@ header {
 .sticky .logo-black {display: block; }
 
 
+@media only screen and (max-width: 767px){
+	
+    /* Sticky Navigation */
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+	
+}
+
+
 /*========================================*/
-/*           FEATURES                  */
+/*           FEATURES SERVICES             */
 /*=======================================*/
 
 .section-features .long-copy { margin-bottom: 30px; }
 
+
+/*========================================*/
+/*           LES STAGES: 	             */
+/*=======================================*/
+
+.stage-box h3{
+	font-weight: bolder;
+}
+
 /*========================================*/
 /*           SIGN UP    */
 /*=======================================*/
+
 
 .section-plans { background: #f4f4f4; }
 
@@ -454,6 +599,17 @@ header {
 .plan-box ul { list-style: none; }
 
 .plan-box ul li{ padding: 5px 0; }
+
+
+@media only screen and (max-width: 1023px){
+	.plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+	
+	 .plan-price { font-size: 250%;}
+}
+
 
 /*========================================*/
 /*            Gallery                      */
@@ -540,6 +696,10 @@ header {
 
 .app-screen {width: 100%;}
 
+@media only screen and (max-width: 480px){
+	.app-screen { width: 90%; }
+}
+
 .works-step {margin-bottom: 25px;}
 
 .works-step: last-of-type {margin-bottom: 80px; }
@@ -569,6 +729,39 @@ header {
     margin-right: 10px;
     
 }
+
+@media only screen and (max-width: 767px){
+	 .app-screen { width: 50%; }
+    .steps-box:first-child { text-align: center; }
+
+    
+    .works-step { margin-bottom: 20px; }
+    .works-step:last-of-type { margin-bottom: 20px; }
+    
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+	
+}
+
+@media only screen and (max-width: 1023px){
+	
+	.steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-steps { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+    
+    .app-screen { width: 50%; }
+	
+}
+
+
+
+/* lien showcase */
 
 
 .lien, .resulta{
@@ -609,6 +802,8 @@ header {
     color: #fff; 
 }
 
+
+
 /* Stage 
 ===================================================*/
 
@@ -634,6 +829,10 @@ header {
 }
 .comp-rencontre { margin-bottom: 5px; }
 
+@media only screen and (max-width: 1023px){
+	.city-feature { font-size: 90%;}
+}
+
 /*========================================*/
 /*             TESTIMONIALS      */
 /*=======================================*/
@@ -643,8 +842,32 @@ header {
     background-position: center;  
 }
 
+@media only screen and (max-width: 480px){
+	.fill-screen {
+    background-size: cover;
+    background-position: center; 
+        
+    }
+}
+
+@media (max-width: 1024px){
+	 .fill-screen {
+    background-size: cover;
+    background-position: center; 
+        
+    }
+}
+
 .fixed-attachment {
     background-attachment: fixed;
+}
+
+@media only screen and (max-width: 480px){
+	.fixed-attachment { background-attachment: scroll; }
+}
+
+@media (max-width: 1024px){
+    .fixed-attachment { background-attachment: scroll; }
 }
 
 
@@ -696,6 +919,11 @@ cite img {
     margin: 0 auto; 
 }
 
+@media only screen and (max-width: 480px){
+	 .contact-form { width: 100%; }
+}
+
+
 input[type=text], 
 input[type=email], 
 select,
@@ -712,6 +940,10 @@ input[type=checkbox] { margin: 10px 5px 10px 0; }
 
 *:focus {outline: none;}
 
+@media only screen and (max-width: 1023px) {
+	.contact-form { width: 80%; }
+}
+
 /*========================================*/
 /*             FOOTER      */
 /*=======================================*/
@@ -727,10 +959,42 @@ footer {
     float: left;
 }
 
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .footer-nav {
+    list-style: none;
+     margin-bottom: 10px;
+    }
+
+    footer p{
+		color: #888;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+    
+}
+
 .social-links {
     list-style: none;
     float: right;
 }
+
+@media only screen and (max-width: 480px){
+	    
+    .social-links {
+    list-style: none;
+    float: left;
+    margin-bottom: 10px;
+  }
+}
+
 
 .footer-nav li,
 .social-links li {
@@ -778,11 +1042,7 @@ footer {
 
 .ion-social-instagram:hover { color: #517fa4; }
 
-footer p{
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-}
+
 
 /* ----------------------------------------------- */
 /* Animations */
@@ -806,4 +1066,7 @@ footer p{
 .js--wp-3.animated {
     opacity: 1;
 }
+
+
+
 
