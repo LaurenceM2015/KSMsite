@@ -27,18 +27,14 @@ body {
 }
 
 
-/* For Small tablet to big tablet: from 0 to 768px to 1023     */
-/*=============================================================*/
+@media only screen and (max-width: 1023px) {
+     body { font-size: 18px; } 
+}
 
 @media only screen and (max-width: 767px){
 	body { font-size: 16px;}
 }
 
-@media only screen and (max-width: 1023px) {
-     body { font-size: 18px; }
-    section { padding: 60px 0; }
-
-}
 
 .clearfix{zoom: 1}
 .clearfix:after{
@@ -59,6 +55,45 @@ ul{
 	list-style: none;
 }
 
+
+.container{
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 1023px){
+	.container{
+		width: 750px;
+	}
+}
+
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+section{
+	padding: 100px 0;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 1023px){
+	 section { padding: 60px 0; }
+	
+}
+
+@media only screen and (max-width: 480px){
+	section { padding: 25px 0;}
+}
+
+@media only screen and (max-width: 767px){
+	 section { padding: 30px 0; }
+}
+
 /*========================================*/
 /*              Reusable Components       */
 /*=======================================*/
@@ -74,19 +109,6 @@ ul{
 
 @media only screen and (max-width: 1200px){
 	.row-section {padding: 0 2%; }
-}
-
-
-section {
-    padding: 70px 0;
-}
-
-@media only screen and (max-width: 480px){
-	section { padding: 25px 0;}
-}
-
-@media only screen and (max-width: 767px){
-	 section { padding: 30px 0; }
 }
 
 
@@ -109,6 +131,15 @@ img{
 
 .text-center{
 	text-align: center;
+}
+
+
+p{
+	margin-bottom: 1em;
+}
+
+figure{
+	margin: 0;
 }
 
 
@@ -221,22 +252,24 @@ h2:after {
  
 .long-copy{
     line-height: 145%; /* line height should be between 120 and 145% */
-    width: 70%;
-    margin-left: 15%; /* to add the remaining 30% after 70% so the content will be centered */
+     width: 100%;
+	 margin-left: 0%;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 767px){
 	.long-copy {
-        width: 100%;
-        margin-left: 0%;
+       
+		width: 70%;
+		margin-left: 15%; /* to add the remaining 30% after 70% so the content will be centered */
+
     }
 }
 
 
 @media only screen and (max-width: 1023px){
 	.long-copy {
-        width: 80%;
-        margin-left: 10%;
+        /*width: 80%; 
+        margin-left: 10%; */
     }
 	
 }
@@ -416,7 +449,6 @@ header {
 
 .logo-black{
     display: none;
-    height: 60px;
     width: auto;
     float: left;
 }
@@ -425,15 +457,23 @@ header {
 /*          NAVIGATION BAR                 */
 /*=======================================*/
 
+.row-nav{
+	
+	
+}
+
 .main-nav{
     float: right;
     list-style: none;
     margin-top: 55px;
 }
 
-.main-nav li{
-    display: inline-block; /* to be side by side */
-    margin-left: 40px;  
+.main-nav li{display: inline-block; /* to be side by side */}
+
+@media only screen and (min-width: 767px){
+	.main-nav li{
+		margin-left: 40px;
+	}
 }
 
 .main-nav li a:link,
@@ -545,9 +585,28 @@ header {
 /*           LES STAGES: 	             */
 /*=======================================*/
 
+
+
 .stage-box h3{
 	font-weight: bolder;
 }
+
+
+.stage-box, .stageItem{
+	margin-bottom: 1em;
+	
+}
+
+
+
+@media only screen and (min-width: 767px){
+	.stage-item{
+	margin: 3em;
+	
+	}
+	
+}
+
 
 /*========================================*/
 /*           SIGN UP    */
@@ -665,8 +724,12 @@ header {
 } 
 
 
+@media only screen and (min-width: 768px){
+	.worksStepBox1{text-align: left;}
+}
 
-.worksStepBox1{text-align: left;}
+
+
 .worksStepBox2{ text-align: left !important;}
 
 .worksStepBox2 .ksmOgamme{width: 60%;}
@@ -688,16 +751,23 @@ header {
 	
 }
 
-.steps-box:last-child {
-	text-align: right;
-	padding-left: 3%; 
+.steps-box:last-child {padding-left: 3%; }
+
+@media only screen and (min-width: 768px){
+	.steps-box:last-child{
+		text-align: right;
+	}
 }
 
+
+@media only screen and (max-width: 768px){
+	.app-screen { width: 50%; }	
+}
 
 .app-screen {width: 100%;}
 
 @media only screen and (max-width: 480px){
-	.app-screen { width: 90%; }
+	
 }
 
 .works-step {margin-bottom: 25px;}
@@ -730,8 +800,10 @@ header {
     
 }
 
+
+
 @media only screen and (max-width: 767px){
-	 .app-screen { width: 50%; }
+	 
     .steps-box:first-child { text-align: center; }
 
     
@@ -755,7 +827,7 @@ header {
     .works-steps { margin-bottom: 40px; }
     .works-step:last-of-type { margin-bottom: 60px; }
     
-    .app-screen { width: 50%; }
+    
 	
 }
 
@@ -804,17 +876,6 @@ header {
 
 
 
-/* Stage 
-===================================================*/
-
-.stage-box, figure{
-	margin: 0;
-}
-
-.stage-item{
-	margin: 3em;
-	
-}
 
 
 
@@ -874,11 +935,9 @@ header {
 .section-testimonials {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero2_min.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero2_min.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-	background-position: center;
-	height: 100vh;
-    color: #fff;   
+   background-size: cover;
+    color: #fff;
+    background-attachment: fixed;  
 }
 
 blockquote {
@@ -904,8 +963,7 @@ cite {
     display: block;
 }
 cite img {
-    height: 45px;
-    border-radius: 50%;
+   
     margin-right: 10px;
     vertical-align: middle;
 }
@@ -950,32 +1008,34 @@ input[type=checkbox] { margin: 10px 5px 10px 0; }
 
 footer {
     background-color: #333;
-    padding: 50px;
+    
     font-size: 80%;
+}
+
+@media only screen and (max-width: 480px){
+	padding: 0;
+	
 }
 
 .footer-nav {
     list-style: none;
     float: left;
+	 margin-bottom: 10px;
+	 padding-top: 10px;
 }
 
 footer p{
     color: #888;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
-@media only screen and (max-width: 480px) {
-
-    .footer-nav {
-    list-style: none;
-     margin-bottom: 10px;
-    }
+@media only screen and (min-width: 768px) {
+  
 
     footer p{
-		color: #888;
-		text-align: center;
-		margin-bottom: 0;
+		
+		margin-bottom: 20px;
 	}
 
     
