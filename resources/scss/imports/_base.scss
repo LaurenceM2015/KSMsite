@@ -1,0 +1,197 @@
+/*
+Orange color: #e56664 or blue #e56664
+ Designing in the browser(trying and tweeting the css code)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+	
+	@media only screen and (max-width: 1023px) {
+      
+	}
+	
+	@media only screen and (max-width: 767px){
+	body { font-size: 16px;}
+	}
+}
+
+
+/*===================== HEADINGS ==================*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;/* For big font-size should reduce the font wieght */
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	
+	@media only screen and (max-width: 767px) {
+    
+    h1 { font-size: 180%}
+   
+	}
+}
+
+
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/*===================== HAFTER SUEDO CLASS ==================*/
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+
+	&:after {
+		display: block;
+		height: 2px;
+		background-color: #e56664;
+		 content: ""; /* specified it content */
+		width: 100px;
+		margin: 0 auto; /* center it */
+		margin-top: 30px /* same as the parent h2 */  
+	}
+	
+	@media only screen and (max-width: 767px){
+		 h2 { font-size: 150%}
+	}
+
+}
+
+/*========================================*/
+/*              Reusable Components       */
+/*=======================================*/
+
+.container{
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 1023px){
+	.container{
+		width: 750px;
+	}
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+section{
+	padding: 100px 0;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 1023px){
+	 section { padding: 60px 0; }
+	
+}
+
+@media only screen and (max-width: 480px){
+	section { padding: 25px 0;}
+}
+
+@media only screen and (max-width: 767px){
+	 section { padding: 30px 0; }
+}
+
+
+
+.row-nav, .row-section {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px){
+	.row-section{}
+}
+
+@media only screen and (max-width: 1200px){
+	.row-section {padding: 0 2%; }
+}
+
+
+@media only screen and (max-width: 767px){
+	.col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+p{
+	margin-bottom: 1em;
+}
+
+
+

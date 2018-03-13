@@ -1,0 +1,160 @@
+/*===================== ICONS ==================*/
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e56664;
+    margin-bottom: 10px;
+    
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e56664;
+    font-size: 120%;
+    margin-right: 10px;
+    /* secret to align text and icons */
+    line-height: 120%; /* to align with the text*/
+    vertical-align: middle;
+    margin-top: -5px; /* pull the margin to the top*/
+}
+
+@media only screen and (max-width: 1023px){
+	.icon-small { 
+        width: 17px; 
+        margin-right: 5px;
+    }
+	
+}
+
+/*===================== BUTTONS =======================*/
+a:link,
+a:active{
+    color: #e56664;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e56664;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+    
+}
+
+/*===================== BUTTONS =======================*/
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+@media only screen and (max-width: 480px){
+	.btn-full{
+        margin-bottom: 15px;
+    }
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e56664;
+    border: 1px solid #e56664;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e56664;
+    color: #e56664;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #ef7c7c;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #ef7c7c;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #ef7c7c;
+    color: #fff;
+}
+
+
+/*========================================*/
+/*             CONTACT FORM      */
+/*=======================================*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto; 
+}
+
+@media only screen and (max-width: 480px){
+	 .contact-form { width: 100%; }
+}
+
+
+input[type=text], 
+input[type=email], 
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{ height: 100px; }
+
+input[type=checkbox] { margin: 10px 5px 10px 0; }
+
+*:focus {outline: none;}
+
+@media only screen and (max-width: 1023px) {
+	.contact-form { width: 80%; }
+}
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
