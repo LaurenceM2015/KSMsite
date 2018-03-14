@@ -11,7 +11,7 @@
 // --------------------------------------------------
 
 // Flexbox display
-@mixin flexbox() {
+@mixin flexbox-box() {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -142,3 +142,34 @@
       -ms-align-self: $align;
           align-self: $align;
 }
+
+// Display Flex with justify content;
+@mixin flex-justify-content($justify) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+	
+	-webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+
+// Display Flex with flex-direciton;
+@mixin flex-flex-direction($direction) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+	-webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+	
+}
+

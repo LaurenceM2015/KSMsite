@@ -37,7 +37,7 @@ body {
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 100%;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 	
@@ -115,22 +115,16 @@ h2 {
 /*=======================================*/
 
 .container{
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+	width: 100%;
+    margin: 0 auto;
+	
 }
 
 @media only screen and (max-width: 1023px){
-	.container{
-		width: 750px;
-	}
+	
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
+
 
 section{
 	padding: 100px 0;
@@ -153,8 +147,9 @@ section{
 
 
 
-.row-nav, .row-section {
-    max-width: 1140px;
+.row-section {
+    max-width: 100%;
+	width: 90%;
     margin: 0 auto;
 }
 
