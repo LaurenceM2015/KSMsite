@@ -32,18 +32,15 @@
 /*===================== BUTTONS =======================*/
 a:link,
 a:active{
-    color: #e56664;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #e56664;
+	text-decoration: none;
+    
+    
 }
 
 a:hover,
 a:active{
     color: #555;
-    border-bottom: 1px solid transparent;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
+    
     
 }
 

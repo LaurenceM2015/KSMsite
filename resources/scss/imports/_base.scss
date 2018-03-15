@@ -27,6 +27,7 @@ ol {
 
 
 
+
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -46,7 +47,7 @@ body {
 	}
 	
 	@media only screen and (max-width: 767px){
-	body { font-size: 16px;}
+	
 	}
 }
 
@@ -62,18 +63,18 @@ h3 {
 
 
 h1 {
-    margin-top: 0;
+    
     margin-bottom: 20px;
     color: #fff;
-    font-size: 240%;/* For big font-size should reduce the font wieght */
-    font-weight: 300;
+    font-size: 160%;
+    font-weight: 700;
     word-spacing: 4px;
     letter-spacing: 1px;
     text-transform: uppercase;
-	
-	@media only screen and (max-width: 767px) {
-    
-    h1 { font-size: 180%}
+	font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	@media only screen and (min-width: 768px) {
+    font-size: 240%;/* For big font-size should reduce the font wieght */
+   	margin-top: 0;
    
 	}
 }
@@ -117,10 +118,14 @@ h2 {
 .container{
 	width: 100%;
     margin: 0 auto;
+	padding: 0 2em;
+}
+
+@media only screen and (min-width: 768px){
 	
 }
 
-@media only screen and (max-width: 1023px){
+.row-container{
 	
 }
 
