@@ -1,3 +1,5 @@
+
+
 /*
 Orange color: #e56664 or blue #e56664
  Designing in the browser(trying and tweeting the css code)
@@ -71,9 +73,13 @@ h1 {
     word-spacing: 4px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    
+
 	font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
 	@media only screen and (min-width: 768px) {
-    font-size: 240%;/* For big font-size should reduce the font wieght */
+    font-size: 4.5em;   /* For big font-size should reduce the font wieght */
+    margin-bottom: 1em;
+
    	margin-top: 0;
    
 	}
@@ -91,7 +97,7 @@ h3 {
 h2 {
     font-size: 180%;
     word-spacing: 2px;
-    text-align: center;
+    text-align: center !important;
     letter-spacing: 1px;
     margin-bottom: 30px;
 

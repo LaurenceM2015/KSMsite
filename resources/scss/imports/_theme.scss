@@ -9,27 +9,130 @@
 /*           LES STAGES: 	             */
 /*=======================================*/
 
+#stage{
+	
+  
+	
+
+    .row-section{
+            
+             @media only screen and (max-width: 480px){
+                display: flex;
+                flex-direction: column;
+
+             }
 
 
-.stage-box h3{
-	font-weight: bolder;
-}
+             width: 100% !important;
+             margin: 0;
+             padding: 0;
 
 
-.stage-box, .stageItem{
-	margin-bottom: 1em;
+            @media only screen and (min-width: 768px){
+            @include flex-flex-wrap(wrap);
+            
+         }
+
+          @media only screen and (max-width: 480px){
+             .order1{
+              @include order(1);
+             }
+
+             .order2{
+              @include order(2);
+             }
+
+             .order3{
+              @include order(3);
+             }
+
+             .order4{
+              @include order(4);
+             }
+
+             .order5{
+              @include order(5);
+             }
+
+             .order6{
+              @include order(6);
+             }
+
+
+             }
+        
+
+         .stage-box{
+
+            .stage-item{
+                padding: 2em;
+
+                 @media only screen and (min-width: 768px){
+                    padding: 4em;
+                 }
+            }
+
+            @include flex-basis(100%);
+
+
+            @media only screen and (min-width: 768px){
+                 @include flex-basis(50%);
+
+                 @include flex-direction-justify(column, center);
+            
+             }
+
+            }
+         
+
+         @media only screen and (min-width: 767px) and (max-width: 1024px){}
+
+         .col{
+
+
+             @media only screen and (min-width: 768px){
+                
+                    margin: 0;
+                }
+         }
+
+
+
+            .stage-box{
+
+                 @media only screen and (min-width: 768px){
+                    
+
+                    img{
+                        height: 100%;
+                    }
+                 }
+
+                h3{
+                    font-weight: bolder;
+                }
+
+
+
+                figure.stageItem{
+                    margin: 0;
+
+
+
+                }
+
+            }
+    
+        
+    }
+
+
+
+
 	
 }
 
 
-
-@media only screen and (min-width: 767px){
-	.stage-item{
-	margin: 3em;
-	
-	}
-	
-}
 
 
 /*========================================*/

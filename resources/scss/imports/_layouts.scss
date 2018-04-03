@@ -38,7 +38,7 @@ nav{
 			
 			.mobile-nav-icon {
 				display: block;
-				padding-top: 2.1em; color: #fff;
+				padding-top: 1.5em; color: #fff;
 				
 				@media only screen and (min-width: 768px){
 					display: none;
@@ -186,12 +186,7 @@ header {
 /* Row Container
 ================================================*/
 .hero-text-box {
-	/*.row-container{
-		text-align: center;
-		@include flex-flex-direction(column);
-		
-	}
-		position: absolute; */
+
 		
 
 	@media only screen and (min-width: 768px){
@@ -229,7 +224,7 @@ header {
 /*=======================================*/
 
 footer {
-    background-color: #333;
+    background-color: rgba(107,9,9,0.62);
     
     font-size: 80%;
 }
@@ -247,7 +242,7 @@ footer {
 }
 
 footer p{
-    color: #888;
+    color: #fff;
     text-align: center;
     margin-top: 0;
 }
@@ -293,7 +288,7 @@ footer p{
 .social-links li a:visited {
     text-decoration: none;
     border: 0;
-    color: #888;
+    color: #fff;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }

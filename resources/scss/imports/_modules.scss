@@ -46,12 +46,15 @@ a:active{
 
 /*===================== BUTTONS =======================*/
 
+.btn{
+    text-transform: uppercase;
+}
 
 .btn:link,
 .btn:visited,
 input[type=submit] {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 20px 40px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
