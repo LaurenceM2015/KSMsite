@@ -1,0 +1,49 @@
+
+/*========================================*/
+/*              Header                 */
+/*=======================================*/
+
+
+
+/* translate the element of it width & height the top and the left */
+
+
+header {
+    /* to make the image darker use the liniar gredien*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero-min.jpg);
+    background-position: center center;   
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+	text-align: center;
+	
+	@include flex-direction-justify(column, center);
+
+	
+	
+/* Row Container
+================================================*/
+.hero-text-box {
+
+		
+
+	@media only screen and (min-width: 768px){
+			
+			
+			
+			@media only screen and (max-width: 767px){
+	 			
+	
+		}
+		
+		@media only screen and (max-width: 1200px) {
+				
+		}
+	}
+		
+}	
+
+
+
+}/* /. Header */	

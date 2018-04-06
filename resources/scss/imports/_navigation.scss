@@ -1,0 +1,139 @@
+
+nav{
+	
+	position: fixed;
+	width: 100%;
+	height: 4.5em;
+	
+	@media only screen and (min-width: 768px){
+		position: absolute;
+		background-color: transparent;
+		
+	}
+
+	
+	.flex-container{
+		@include flex-direction-justify(column, space-between);
+		background-color: rgba(107, 9, 9, 0.62);
+		
+		@media only screen and (min-width: 768px){
+			flex-direction: row;
+			background-color: transparent;
+		}
+		
+		
+		/* Branding */
+		.branding{
+			@include flex-justify-content(space-between);
+			
+			img{width: auto;}
+			
+			.mobile-nav-icon {
+				display: block;
+				padding-top: 1.5em; color: #fff;
+				
+				@media only screen and (min-width: 768px){display: none;} }
+		
+		}
+		
+		.flex-menu{
+			@media only screen and (min-width: 768px){
+				@include flex-direction-justify(column, center);
+				flex-basis: 70%;
+			}
+			
+			.main-nav{
+				display: none;
+				@media only screen and (min-width: 768px){@include flex-justify-content(flex-end);}
+				
+				
+				li.flex-item{
+						/*padding-bottom: 1em;
+						padding-top: 1em;
+						padding-left: 2em; */
+						padding: 1em 0 1em 2em;
+						font-size: 1.1em;
+						text-transform: uppercase;
+						
+					@media only screen and (min-width: 768px) and (max-width: 1024px){
+						padding-left: 1.5em;
+						padding-top: 0;
+						font-size: 0.7em;
+    					
+					}
+					
+
+						a{
+							color: #fff;
+							&:link, &:visited{
+								padding: 8px 0;
+								border-bottom: 2px solid transparent;
+								-webkit-transition: border-bottom 0.2s, color 0.2s;
+								transition: border-bottom 0.2s, color 0.2s;
+							}
+
+							&:active, &:hover{
+								color: #e56664;
+								border-bottom: 1px solid #e56664;
+
+
+							}
+						}
+					}
+		
+			}
+		}
+	}
+	
+}
+
+/*========================================*/
+/*          STICKY NAVIGATION             */
+/*=======================================*/
+
+/* Sticky navi */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	box-shadow: 0 2px 2px #efefef;
+	z-index: 9999;
+		
+	
+		.flex-container{
+			background-color: rgba(255, 255, 255, 0.98);
+			
+			.branding{
+				
+				
+				.mobile-nav-icon { 
+					color: #e56664; 
+					@media only screen and (min-width: 768px){}
+				}
+			}
+			
+			.flex-menu{
+				.main-nav { 
+					.flex-item {
+						padding-left: 0;
+						@media only screen and (min-width: 768px){ padding-left: 1.5em;}
+						
+					
+						a{color: #555 !important;}
+					}
+					
+				}
+			}
+
+		}
+		
+		
+		.logo { display: block; }
+		
+		
+		
+		
+	}

@@ -1,3 +1,4 @@
+
 /*========================================*/
 /*           FEATURES SERVICES             */
 /*=======================================*/
@@ -10,128 +11,92 @@
 /*=======================================*/
 
 #stage{
-	
-  
-	
 
     .row-section{
-            
-             @media only screen and (max-width: 480px){
-                display: flex;
-                flex-direction: column;
-
-             }
-
-
-             width: 100% !important;
-             margin: 0;
-             padding: 0;
+		width: 100% !important;
+        margin: 0;
+        padding: 0;
+		
+    	@media only screen and (max-width: 480px){ @include flex-flex-direction(column);}
 
 
-            @media only screen and (min-width: 768px){@include flex-flex-wrap(wrap);}
+        @media only screen and (min-width: 768px){@include flex-flex-wrap(wrap);}
       
 /* Changes the order for 3 and 4 on a bigger screen */
-			@media only screen and (min-width: 768px){
+		@media only screen and (min-width: 768px){
 					
-				.order1{@include order(1);}
-
-				.order2{@include order(2);}
-
-				.order3{@include order(3);}
-
-				.order4{@include order(4);}
-
-				.order5{@include order(5);}
-
-				.order6{@include order(6);}
-
-					
-			}
+			.order1{@include order(1);}
+			.order2{@include order(2);}
+			.order3{@include order(3);}
+			.order4{@include order(4);}
+			.order5{@include order(5);}
+			.order6{@include order(6);}
+		}
         
-
-         .stage-box{
-			 
-            .stage-item{
-                padding: 2em;
-				
-
-                 @media only screen and (min-width: 768px){
-                    padding: 4em;
-					 
-					 /* the order of the box-item*/
-					 
-                 }
-            }
-
-            @include flex-basis(100%);
-
-
-            @media only screen and (min-width: 768px){
-                 @include flex-basis(50%);
-
-                 @include flex-direction-justify(column, center);
+      .stage-box{
+		  
+	  	@include flex-basis(100%);
+		  
+		  @media only screen and (min-width: 768px){
+          	@include flex-basis(50%);
+            @include flex-direction-justify(column, center);
             
-             }
+           }
+		  
+      		.stage-item{
+				padding: 2em;
+				
+					@media only screen and (min-width: 768px){padding: 4em;}
+			}
 
-            }
+            
+
+       }
          
+		@media only screen and (min-width: 767px) and (max-width: 1024px){}
 
-         @media only screen and (min-width: 767px) and (max-width: 1024px){}
+         .col{ @media only screen and (min-width: 768px){ margin: 0;} }
 
-         .col{
-
-
-             @media only screen and (min-width: 768px){
-                
-                    margin: 0;
-                }
-         }
-
-
-
-            .stage-box{
-
-                 @media only screen and (min-width: 768px){
-                    
-
-                    img{
-                        height: 100%;
-                    }
-                 }
-
-                h3{
-                    font-weight: bolder;
-                }
-
-
-
-                figure.stageItem{
-                    margin: 0;
-
-
-
-                }
-
+        .stage-box{
+        	@media only screen and (min-width: 768px){
+                    img{height: 100%;}
             }
+
+			h3{font-weight: bolder;}
+
+            figure.stageItem{ margin: 0;}
+          
+         }
     
         
     }
 
-
-
-
-	
 }
-
-
 
 
 /*========================================*/
 /*           SIGN UP    */
 /*=======================================*/
 
+ .section-plans{
+	 
+	 background: $light-grey;
+	 
+ 	.row-section{
+    	.box{
+       		img{
+				
+       		}		
+       				
+       		h3{
+       		}		
+       				
+       }
+    }
+  }
 
-.section-plans { background: #f4f4f4; }
+
+/* Plan box old
 
 .plan-box {
     background: #fff;
@@ -186,6 +151,8 @@
 	
 	 .plan-price { font-size: 250%;}
 }
+
+*/
 
 
 /*========================================*/
@@ -383,6 +350,7 @@
 .text-white{padding-top: 10%;}
 
 .karateEvents{
+	
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/karatefamille.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/karatefamille.jpg);
     background-size: cover;
@@ -390,6 +358,10 @@
 	background-position: center;
 	height: 100vh;
     color: #fff; 
+	
+	@include flex-direction-justify(column, center);
+	
+	@media only screen and (min-width: 768px){ background-attachment: scroll;}
 }
 
 
@@ -403,7 +375,7 @@
 
 .box img {
     width: 100%;
-    height: auto;
+    height:auto;
     margin-bottom: 15px;
 }
 .comp-rencontre { margin-bottom: 5px; }
@@ -416,73 +388,65 @@
 /*             TESTIMONIALS      */
 /*=======================================*/
 
-.fill-screen {
-    background-size: cover;
-    background-position: center;  
-}
-
-@media only screen and (max-width: 480px){
-	.fill-screen {
-    background-size: cover;
-    background-position: center; 
-        
-    }
-}
-
-@media (max-width: 1024px){
-	 .fill-screen {
-    background-size: cover;
-    background-position: center; 
-        
-    }
-}
-
-.fixed-attachment {
-    background-attachment: fixed;
-}
-
-@media only screen and (max-width: 480px){
-	.fixed-attachment { background-attachment: scroll; }
-}
-
-@media (max-width: 1024px){
-    .fixed-attachment { background-attachment: scroll; }
-}
-
-
 .section-testimonials {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero2_min.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero2_min.jpg);
-   background-size: cover;
-    color: #fff;
-    background-attachment: fixed;  
+   	background-size: cover;
+	background-attachment: fixed; 
+	
+	@include flex-direction-justify(column, center);
+    
+	height: 100vh;
+	color: #fff;
+		
+	.heading{
+		@include flex-basis(0);
+		
+	}
+	
+		.flex-container{
+			
+			
+			blockquote {
+				padding: 2%;
+				font-style: italic;
+				line-height: 145%;
+				position: relative;
+				margin-top: 2.500em;
+				height: 6.250em;
+
+				&:before {
+					/*content: "\201C";
+					font-size: 500%;
+					display: block;
+					position: absolute;
+					top: -5px;
+					left: -5px;*/
+				}
+			}
+			
+			cite {
+				font-size: 90%;
+				margin-top: 25px;
+				display: block;
+				
+				img {
+					margin-right: 10px;
+					vertical-align: middle;
+		   		}
+
+			}
+ 
+		}
+
+	
 }
 
-blockquote {
-    padding: 2%;
-    font-style: italic;
-    line-height: 145%;
-    position: relative;
-    margin-top: 40px;
-}
 
-blockquote:before {
-    content: "\201C";
-    font-size: 500%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-}
 
-cite {
-    font-size: 90%;
-    margin-top: 25px;
-    display: block;
-}
-cite img {
-   
-    margin-right: 10px;
-    vertical-align: middle;
-}
+
+
+
+
+
 
