@@ -28,47 +28,38 @@
              padding: 0;
 
 
-            @media only screen and (min-width: 768px){
-            @include flex-flex-wrap(wrap);
-            
-         }
+            @media only screen and (min-width: 768px){@include flex-flex-wrap(wrap);}
+      
+/* Changes the order for 3 and 4 on a bigger screen */
+			@media only screen and (min-width: 768px){
+					
+				.order1{@include order(1);}
 
-          @media only screen and (max-width: 480px){
-             .order1{
-              @include order(1);
-             }
+				.order2{@include order(2);}
 
-             .order2{
-              @include order(2);
-             }
+				.order3{@include order(3);}
 
-             .order3{
-              @include order(3);
-             }
+				.order4{@include order(4);}
 
-             .order4{
-              @include order(4);
-             }
+				.order5{@include order(5);}
 
-             .order5{
-              @include order(5);
-             }
+				.order6{@include order(6);}
 
-             .order6{
-              @include order(6);
-             }
-
-
-             }
+					
+			}
         
 
          .stage-box{
-
+			 
             .stage-item{
                 padding: 2em;
+				
 
                  @media only screen and (min-width: 768px){
                     padding: 4em;
+					 
+					 /* the order of the box-item*/
+					 
                  }
             }
 
