@@ -79,5 +79,24 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }        
     });
+	
+	// GOOGLE MAPs
+	
+	var map = new GMaps({
+	  div: '#map',
+	  lat: 47.9028932,
+	  lng: -2.0370674,
+		zoom: 12
+	});
+	
+	//Marker
+	map.addMarker({
+	  lat: 47.9028932,
+	  lng: -2.0370674,
+	  title: 'Mardié, France',
+	  click: function(e) {
+		alert('<p>Karate Shotokan Mardie</p>');
+	  }
+	});
 
 });

@@ -393,27 +393,15 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero2_min.jpg);
    	background-size: cover;
 	background-attachment: fixed; 
-	
-	@include flex-direction-justify(column, center);
-    
-	height: 100vh;
 	color: #fff;
-		
-	.heading{
-		@include flex-basis(0);
-		
-	}
-	
-		.flex-container{
-			
-			
-			blockquote {
-				padding: 2%;
-				font-style: italic;
-				line-height: 145%;
-				position: relative;
-				margin-top: 2.500em;
-				height: 6.250em;
+
+		blockquote {
+			padding: 2%;
+			font-style: italic;
+			line-height: 145%;
+			position: relative;
+			margin-top: 40px;
+			height: 6.250em;
 
 				&:before {
 					/*content: "\201C";
@@ -431,13 +419,14 @@
 				display: block;
 				
 				img {
+					
 					margin-right: 10px;
 					vertical-align: middle;
 		   		}
 
 			}
  
-		}
+		
 
 	
 }

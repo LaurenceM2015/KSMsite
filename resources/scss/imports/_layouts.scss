@@ -2,6 +2,8 @@
 /*              Reusable Components       */
 /*=======================================*/
 
+
+
 .container{
 	width: 100%;
     margin: 0 auto;
@@ -57,12 +59,14 @@ section{
 
 .fill-screen {
     background-size: cover;
-    background-position: center;  
+    background-position: center; 
+	height: 100vh;
 }
 
 
 .fixed-attachment {
 	background-attachment: scroll;
+	height: 100%vh;
 	
 	@media only screen and (min-width: 768px){ background-attachment: fixed;}
 

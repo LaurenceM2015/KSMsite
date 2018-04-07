@@ -54,10 +54,10 @@ a:active{
 .btn:visited,
 input[type=submit] {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 1em 2em;
     font-weight: 300;
     text-decoration: none;
-    border-radius: 200px;
+    border-radius: 2em;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
