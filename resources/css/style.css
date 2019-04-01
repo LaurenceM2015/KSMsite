@@ -1,4 +1,14 @@
 /* Display Flex, with flex- wrap */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul,
+ol {
+  list-style: none; }
+
 /*
 Orange color: #e56664 or blue #e56664
  Designing in the browser(trying and tweeting the css code)
@@ -201,6 +211,57 @@ input[type=submit]:active {
 .js--wp-2.animated,
 .js--wp-3.animated {
   opacity: 1; }
+
+/*========================================*/
+/*             CONTACT FORM      */
+/*=======================================*/
+#contact-nous {
+  /*position: relative; */
+  padding: 0; }
+  @media only screen and (min-width: 1024px) {
+    #contact-nous {
+      position: relative; } }
+  #contact-nous #map {
+    height: 18.750em; }
+    @media only screen and (min-width: 1024px) {
+      #contact-nous #map {
+        width: 100%;
+        height: 37.500em;
+        position: relative;
+        z-index: 0; } }
+  #contact-nous .form-container {
+    width: 100% !important; }
+    @media only screen and (min-width: 1024px) {
+      #contact-nous .form-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        right: 0;
+        width: 48% !important; } }
+    #contact-nous .form-container .flex-container {
+      padding: 2.500em 0; }
+      #contact-nous .form-container .flex-container .row-section .contact-form {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left; }
+        @media only screen and (min-width: 768px) {
+          #contact-nous .form-container .flex-container .row-section .contact-form {
+            width: 80%; } }
+        #contact-nous .form-container .flex-container .row-section .contact-form .row-section input[type=text],
+        #contact-nous .form-container .flex-container .row-section .contact-form .row-section input[type=email],
+        #contact-nous .form-container .flex-container .row-section .contact-form .row-section select,
+        #contact-nous .form-container .flex-container .row-section .contact-form .row-section textarea {
+          width: 100%;
+          padding: 7px;
+          border-radius: 3px;
+          border: 1px solid #ccc; }
+        #contact-nous .form-container .flex-container .row-section .contact-form .row-section textarea {
+          height: 100px; }
+        #contact-nous .form-container .flex-container .row-section .contact-form .row-section input[type=checkbox] {
+          margin: 10px 5px 10px 0; }
+  #contact-nous *:focus {
+    outline: none; }
 
 nav {
   position: fixed;
@@ -472,67 +533,6 @@ section {
   @media only screen and (min-width: 768px) {
     .fixed-attachment {
       background-attachment: fixed; } }
-
-/*========================================*/
-/*             CONTACT FORM      */
-/*=======================================*/
-#contact-nous {
-  /*position: relative; */
-  padding: 0; }
-  @media only screen and (min-width: 1024px) {
-    #contact-nous {
-      position: relative; } }
-  #contact-nous #map {
-    height: 18.750em; }
-    @media only screen and (min-width: 1024px) {
-      #contact-nous #map {
-        width: 100%;
-        height: 37.500em;
-        position: relative;
-        z-index: 0; } }
-  #contact-nous .form-container {
-    width: 100% !important; }
-    @media only screen and (min-width: 1024px) {
-      #contact-nous .form-container {
-        background-color: rgba(255, 255, 255, 0.8);
-        position: absolute;
-        top: 0;
-        z-index: 10;
-        right: 0;
-        width: 48% !important; } }
-    #contact-nous .form-container .flex-container {
-      padding: 2.500em 0; }
-      #contact-nous .form-container .flex-container .row-section .contact-form {
-        width: 100%;
-        margin: 0 auto;
-        text-align: left; }
-        @media only screen and (min-width: 768px) {
-          #contact-nous .form-container .flex-container .row-section .contact-form {
-            width: 80%; } }
-        #contact-nous .form-container .flex-container .row-section .contact-form .row-section input[type=text],
-        #contact-nous .form-container .flex-container .row-section .contact-form .row-section input[type=email],
-        #contact-nous .form-container .flex-container .row-section .contact-form .row-section select,
-        #contact-nous .form-container .flex-container .row-section .contact-form .row-section textarea {
-          width: 100%;
-          padding: 7px;
-          border-radius: 3px;
-          border: 1px solid #ccc; }
-        #contact-nous .form-container .flex-container .row-section .contact-form .row-section textarea {
-          height: 100px; }
-        #contact-nous .form-container .flex-container .row-section .contact-form .row-section input[type=checkbox] {
-          margin: 10px 5px 10px 0; }
-  #contact-nous *:focus {
-    outline: none; }
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-ul,
-ol {
-  list-style: none; }
 
 /*========================================*/
 /*           FEATURES SERVICES             */
