@@ -1,11 +1,17 @@
-@import "imports/_variables";
-@import "imports/_mixin";
-@import "imports/_base";
-@import "imports/_modules";
-@import "imports/_navigation";
-@import "imports/_header";
-@import "imports/_footer";
-@import "imports/_layouts";
-@import "imports/_form";
-@import "imports/_reset";
-@import "imports/_theme";
+@import "abstracts/_variables";
+@import "abstracts/_mixin";
+@import "abstracts/_reset";
+
+@import "bases/_base";
+@import "bases/_modules";
+
+@import "components/_form";
+
+@import "layouts/_navigation";
+@import "layouts/_header";
+@import "layouts/_footer";
+
+
+
+@import "pages/_layouts";
+@import "themes/_theme";
